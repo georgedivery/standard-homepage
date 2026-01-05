@@ -14,6 +14,7 @@
 
 // UI Components
 @use 'components/buttons';
+@use 'components/services';
 @use 'components/forms';
 @use 'components/posts';
 @use 'components/sidebar';
@@ -23,6 +24,7 @@
 
 @use 'sections/home-hero';
 @use 'sections/analytics-section';
+@use 'sections/services-section';
 
 // Responsive
 @use 'responsive';
