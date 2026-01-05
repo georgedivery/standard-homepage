@@ -17,6 +17,7 @@ const imageminOptipng = require('imagemin-optipng').default || require('imagemin
 const imageminSvgo = require('imagemin-svgo').default || require('imagemin-svgo');
 const plumber = require('gulp-plumber');
 const newer = require('gulp-newer');
+const fs = require('fs');
 
 /**
  * Unify all scripts to work with source and destination paths.
@@ -52,8 +53,16 @@ gulp.task('sass', function () {
 });
 
 gulp.task('cssmin', function () {
+  const cssFile = paths.destination.css + 'master.css';
+  // Check if CSS file exists, if not, skip this task
+  if (!fs.existsSync(cssFile)) {
+    console.log('master.css does not exist yet, skipping CSS minification.');
+    return Promise.resolve();
+  }
+  
   return gulp
-    .src(paths.destination.css + 'master.css')
+    .src(cssFile, { allowEmpty: true })
+    .pipe(plumber())
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(rename({ suffix: '.min' }))
@@ -96,9 +105,16 @@ gulp.task('minifyScripts', function () {
 });
 
 gulp.task('optimizeImages', function () {
+  // Check if images directory exists, if not, skip this task
+  if (!fs.existsSync(paths.source.images)) {
+    console.log('Images directory does not exist, skipping image optimization.');
+    return Promise.resolve();
+  }
+  
   // Add separate folders if required.
   return gulp
-    .src(paths.source.images + '*')
+    .src(paths.source.images + '**/*', { allowEmpty: true })
+    .pipe(plumber())
     .pipe(newer(paths.destination.images))
     .pipe(imagemin([
       imageminGifsicle({ interlaced: true }),
@@ -131,7 +147,11 @@ gulp.task('watch', function () {
 });
 
 // Build task (runs all tasks once)
-gulp.task('build', gulp.parallel('sass', 'minifyScripts', 'optimizeImages', 'optimizeFonts', 'cssmin'));
+// cssmin must run after sass completes, so we use series for that dependency
+gulp.task('build', gulp.series(
+  gulp.parallel('sass', 'minifyScripts', 'optimizeImages', 'optimizeFonts'),
+  'cssmin'
+));
 
 // Default task
 gulp.task('default', gulp.series('build', 'watch'));
