@@ -20,16 +20,16 @@ body {
   color: $color-text;
   background-color: $color-bg;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;  
 }
 
 // Typography
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-heading;
   line-height: $line-height-heading;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: $spacing-sm;
-  color: $color-text;
+ 
 }
 
 h1 { font-size: $font-size-h1; }
@@ -61,4 +61,3 @@ img {
 ul, ol {
   list-style: none;
 }
-

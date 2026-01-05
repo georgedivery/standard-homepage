@@ -19,6 +19,8 @@
 @use 'components/comments';
 @use 'components/utilities';
 
+@use 'sections/home-hero';
+
 // Responsive
 @use 'responsive';
 
@@ -61,3 +63,4 @@
   margin: 0 auto;
 }
 
+ 
