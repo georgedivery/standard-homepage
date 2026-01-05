@@ -80,7 +80,7 @@ function devrix_enqueue_assets() {
         wp_enqueue_script(
             'devrix-scripts',
             get_template_directory_uri() . '/dist/scripts/bundle.min.js',
-            array(),
+            array('jquery'),
             filemtime(get_template_directory() . '/dist/scripts/bundle.min.js'),
             true
         );

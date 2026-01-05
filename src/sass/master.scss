@@ -5,6 +5,8 @@
 @use 'reset';
 
 // Layout Components
+@use 'components/slick';
+@use 'components/slider-images';
 @use 'components/container';
 @use 'components/header';
 @use 'components/navigation';
@@ -20,6 +22,7 @@
 @use 'components/utilities';
 
 @use 'sections/home-hero';
+@use 'sections/analytics-section';
 
 // Responsive
 @use 'responsive';

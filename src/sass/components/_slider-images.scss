@@ -1,0 +1,41 @@
+@use "../variables" as *;
+
+.slider-images {
+  margin: 0 -10px;
+  .slide-inner {
+    text-align: center;
+  }
+
+  .slide { 
+    padding: 0 10px;
+   }
+
+  h6 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .slick-dots {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    li {
+      opacity: .5;
+
+      &.slick-active {
+        opacity: 1;
+      }
+      margin: 0 7px;
+      button {
+        width: 24px;
+        height: 24px;
+        border: 0;
+        background: none;
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
