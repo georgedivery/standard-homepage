@@ -1,0 +1,63 @@
+// Variables and Mixins
+@use 'variables' as *;
+
+// Reset and Base
+@use 'reset';
+
+// Layout Components
+@use 'components/container';
+@use 'components/header';
+@use 'components/navigation';
+@use 'components/footer';
+
+// UI Components
+@use 'components/buttons';
+@use 'components/forms';
+@use 'components/posts';
+@use 'components/sidebar';
+@use 'components/pagination';
+@use 'components/comments';
+@use 'components/utilities';
+
+// Responsive
+@use 'responsive';
+
+// Main Content Area
+.site-content {
+  padding: $spacing-xl 0;
+  min-height: 60vh;
+}
+
+// Archive Header
+.archive-header {
+  margin-bottom: $spacing-xl;
+  padding-bottom: $spacing-md;
+  border-bottom: 1px solid $color-border;
+}
+
+.archive-title {
+  font-size: $font-size-h1;
+  margin-bottom: $spacing-xs;
+}
+
+.archive-description {
+  color: $color-text-light;
+  font-size: $font-size-large;
+}
+
+// Error 404
+.error-404 {
+  text-align: center;
+  padding: $spacing-xl * 2 0;
+}
+
+.error-404 .page-title {
+  font-size: 48px;
+  margin-bottom: $spacing-md;
+}
+
+.error-404 .page-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+

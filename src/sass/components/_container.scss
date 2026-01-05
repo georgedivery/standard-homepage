@@ -1,0 +1,14 @@
+@use '../variables' as *;
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+  width: 100%;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 $container-padding;
+}
+

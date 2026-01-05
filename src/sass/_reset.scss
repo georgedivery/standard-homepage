@@ -1,0 +1,64 @@
+@use 'variables' as *;
+
+// Reset and Base Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size-base;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-text;
+  background-color: $color-bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+  line-height: $line-height-heading;
+  font-weight: bold;
+  margin-bottom: $spacing-sm;
+  color: $color-text;
+}
+
+h1 { font-size: $font-size-h1; }
+h2 { font-size: $font-size-h2; }
+h3 { font-size: $font-size-h3; }
+h4 { font-size: $font-size-h4; }
+
+p {
+  margin-bottom: $spacing-sm;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  transition: color $transition-base;
+
+  &:hover {
+    color: $color-secondary;
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+

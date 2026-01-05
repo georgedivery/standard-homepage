@@ -1,0 +1,48 @@
+@use '../variables' as *;
+
+.sidebar {
+  margin-top: $spacing-xl;
+}
+
+.widget {
+  margin-bottom: $spacing-xl;
+  padding: $spacing-md;
+  background-color: $color-bg-light;
+  border-radius: 4px;
+}
+
+.widget-title {
+  font-size: $font-size-h4;
+  margin-bottom: $spacing-md;
+  font-weight: bold;
+  color: $color-text;
+}
+
+.widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: $spacing-sm;
+    padding-bottom: $spacing-sm;
+    border-bottom: 1px solid $color-border;
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  a {
+    color: $color-text;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary;
+      text-decoration: underline;
+    }
+  }
+}
+

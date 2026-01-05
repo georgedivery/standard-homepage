@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+// Responsive styles
+@media (max-width: $breakpoint-md) {
+  .site-header .container {
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+
+  .main-navigation ul {
+    flex-direction: column;
+    gap: $spacing-xs;
+    text-align: center;
+  }  
+
+  .post-title {
+    font-size: $font-size-h2;
+  }
+
+  .footer-widgets {
+    grid-template-columns: 1fr;
+  }
+
+  .pagination {
+    flex-direction: column;
+    align-items: center;
+  }  
+}
+
+@media (max-width: $breakpoint-sm) {
+  .container {
+    padding: 0 $spacing-sm;
+  }
+
+  h1 { font-size: $font-size-h2; }
+  h2 { font-size: $font-size-h3; }
+  h3 { font-size: $font-size-h4; }
+}
+

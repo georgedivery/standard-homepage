@@ -1,0 +1,56 @@
+@use '../variables' as *;
+
+.btn {
+  display: inline-block;
+  padding: $spacing-xs $spacing-md;
+  font-size: $font-size-base;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all $transition-base;
+  line-height: 1.5;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 2px solid $color-primary;
+    outline-offset: 2px;
+  }
+}
+
+.btn-primary {
+  background-color: $color-primary;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-secondary;
+    color: $color-white;
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: $color-primary;
+  border: 2px solid $color-primary;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+
+.btn-large {
+  padding: $spacing-sm $spacing-lg;
+  font-size: $font-size-large;
+}
+
+.btn-small {
+  padding: 0.25rem $spacing-sm;
+  font-size: $font-size-small;
+}
+

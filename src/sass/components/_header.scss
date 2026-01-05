@@ -1,0 +1,39 @@
+@use '../variables' as *;
+
+.site-header {
+  background-color: $color-white;
+  border-bottom: 1px solid $color-border;
+  padding: $spacing-md 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: $font-size-h3;
+  font-weight: bold;
+  margin: 0;
+
+  a {
+    color: $color-text;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary;
+      text-decoration: none;
+    }
+  }
+}
+
+.site-description {
+  font-size: $font-size-small;
+  color: $color-text-light;
+  margin: 0;
+}

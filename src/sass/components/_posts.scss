@@ -1,0 +1,66 @@
+@use '../variables' as *;
+
+.post {
+  margin-bottom: $spacing-xl;
+  padding-bottom: $spacing-xl;
+  border-bottom: 1px solid $color-border;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.post-title {
+  font-size: $font-size-h1;
+  margin-bottom: $spacing-xs;
+
+  a {
+    color: $color-text;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary;
+      text-decoration: none;
+    }
+  }
+}
+
+.post-meta {
+  color: $color-text-light;
+  font-size: $font-size-small;
+  margin-bottom: $spacing-md;
+}
+
+.post-content {
+  margin-top: $spacing-md;
+
+  p {
+    margin-bottom: $spacing-md;
+  }
+
+  img {
+    margin: $spacing-lg 0;
+  }
+}
+
+.post-thumbnail {
+  margin-bottom: $spacing-md;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: $spacing-sm;
+  color: $color-primary;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
