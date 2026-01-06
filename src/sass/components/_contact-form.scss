@@ -1,0 +1,94 @@
+.form-contact {
+  position: relative;
+
+  .form-inner {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 50px 0;
+    margin-bottom: 50px;
+    align-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 40%;
+      left: 0;
+      height: 100%;
+      padding: 1px;
+      border-radius: 20px;
+
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1),
+        rgba(255, 103, 31, 0)
+      );
+
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+
+      pointer-events: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 40%;
+      right: 0;
+      height: 100%;
+      padding: 1px;
+      border-radius: 20px;
+
+      background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 1),
+        rgba(255, 103, 31, 0)
+      );
+
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+
+      pointer-events: none;
+    }
+  }
+
+  .form-content {
+    width: 50%;
+    padding: 0 50px;
+
+    .label {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 22px;
+    }
+  }
+  .form-aside {
+    width: 50%;
+    padding: 0 50px;
+  }
+  .form-foot {
+    width: 100%;
+
+    p {
+      &:last-child {padding-top: 20px; }
+    }
+  }
+
+  .form-title {
+    margin-bottom: 30px;
+  }
+  .form-title strong {
+    font-weight: 600;
+  }
+}

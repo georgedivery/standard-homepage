@@ -1,49 +1,51 @@
 <section class="section-contact">
     <div class="shell">
         <div class="section-inner">
-            <div class="form">
+            <div class="form form-contact">
                 <form action="#">
-                    <div class="form-content">
-                        <div class="label">
-                            We'd love to hear from you
+                    <div class="form-inner">
+                        <div class="form-content">
+                            <div class="label">
+                                We'd love to hear from you
+                            </div>
+
+                            <h3 class="form-title">
+                                Contact <strong>Us</strong>
+                            </h3>
+
+                            <p>
+                                Anthesis has offices in the U.S., Canada, UK, France, the Netherlands, Belgium, South
+                                Africa,
+                                Ireland, Italy, Germany, Sweden, Spain, Portugal, Andorra, Finland, Colombia, Brazil,
+                                China,
+                                the
+                                Philippines and the Middle East.
+                            </p>
                         </div>
 
-                        <h4 class="form-title">
-                            Contact Us
-                        </h4>
+                        <div class="form-aside">
 
-                        <p>
-                            Anthesis has offices in the U.S., Canada, UK, France, the Netherlands, Belgium, South
-                            Africa,
-                            Ireland, Italy, Germany, Sweden, Spain, Portugal, Andorra, Finland, Colombia, Brazil, China,
-                            the
-                            Philippines and the Middle East.
-                        </p>
-                    </div>
-                    <div class="form-aside">
+                            <div class="form-row">
+                                <input class="field" type="text" id="1" placeholder="Full Name">
+                            </div>
 
-                        <div class="form-row">
-                            <input type="text" placeholder="full Name">
+                            <div class="form-row">
+                                <input type="text" id="2" class="field" placeholder="Company Name">
+                            </div>
+
+                            <div class="form-row">
+                                <input type="text" id="3" class="field" placeholder="Job Title">
+                            </div>
+
+                            <div class="form-row">
+                                <input type="text" id="4" class="field" placeholder="Email">
+                            </div>
+
+                            <div class="form-row">
+                                <textarea name="#" placeholder="Message" class="textarea" id="#"></textarea>
+                            </div>
+
                         </div>
-
-                        <div class="form-row">
-                            <input type="text" placeholder="Company Name">
-                        </div>
-
-                        <div class="form-row">
-                            <input type="text" placeholder="Job Title">
-                        </div>
-
-                        <div class="form-row">
-                            <input type="text" placeholder="Email">
-                        </div>
-
-                        <div class="form-row">
-                            <textarea name="#" id="#">
-                        Message
-                       </textarea>
-                        </div>
-
                     </div>
 
                     <div class="form-foot">
@@ -64,7 +66,7 @@
                         </div>
 
                         <p>
-                            <button type="submit">
+                            <button type="submit" class="btn btn_orange">
                                 Submit
                             </button>
                         </p>
