@@ -5,7 +5,7 @@
   .section-inner {
     position: relative;
   }
-  
+
   .section-line-ornament {
     position: absolute;
     top: 50%;
@@ -66,5 +66,22 @@
     position: relative;
     left: -35px;
     padding: 50px 0;
+  }
+
+  @media (max-width: 1800px) {
+    .section-content {
+      width: calc(31%);
+      margin-right: 0px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .section-content {
+      width: 40%;
+    }
+
+    .section-aside {
+      width: 60%;
+    }
   }
 }

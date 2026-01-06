@@ -5,13 +5,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 jQuery(function ($) {
 
-  var nav = $('#site-navigation');
-  if (nav.length) {
-    var topLevelItems = nav.find('ul').find('li');
+var nav = $('#site-navigation');
+if (nav.length) {
+  var menu = nav.find('#primary-menu');
+  if (menu.length) {
+    var topLevelItems = menu.children('li');
     if (topLevelItems.length > 4) {
       nav.addClass('navigation-large');
     }
   }
+}
 
   const dotSvg = `
   <button>
