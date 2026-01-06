@@ -28,6 +28,14 @@
   color: #04114b;
 }
 
+.btn_orange {
+  background: #ff671f;
+  &:hover {
+    background: #04114b;
+    color: #fff;
+  }
+}
+
 .btn_white {
   background: #fff;
   color: #04114b;

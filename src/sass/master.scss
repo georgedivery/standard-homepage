@@ -7,6 +7,7 @@
 // Layout Components
 @use 'components/slick';
 @use 'components/slider-images';
+@use 'components/slider-news';
 @use 'components/container';
 @use 'components/header';
 @use 'components/navigation';
@@ -25,6 +26,7 @@
 @use 'sections/home-hero';
 @use 'sections/analytics-section';
 @use 'sections/services-section';
+@use 'sections/news-section';
 
 // Responsive
 @use 'responsive';

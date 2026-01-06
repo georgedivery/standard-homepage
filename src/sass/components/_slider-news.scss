@@ -1,0 +1,122 @@
+@use "../variables" as *;
+
+.slider-news {
+  padding-top: 50px;
+  padding-right: 25px;
+  margin-right: -25px;
+
+  .slide {
+    padding: 0 30px;
+    h4 {
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    p {
+      font-size: 18px;
+      strong {
+        font-weight: 600;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .slide-image {
+    padding-bottom: 56%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    position: relative;
+    margin-bottom: 60px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: -24px;
+      left: 50%;
+     height: 100%;
+      padding: 1px;
+      border-radius: 20px;
+      z-index: -1;
+
+      background: linear-gradient(
+        to left,
+        rgba(255, 103, 31, 1),
+        rgba(255, 103, 31, 0)
+      );
+
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+
+      pointer-events: none;
+    }
+
+    .slide-image-label {
+      background: #fff;
+      text-transform: uppercase;
+      position: absolute;
+      left: -1px;
+      top: 40px;
+      padding: 0 20px;
+      border-radius: 0 20px 20px 0;
+      font-weight: 600;
+      height: 30px;
+      font-size: 14px;
+      line-height: 30px;
+    }
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 0;
+    width: 33px;
+    height: 33px;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #04114b;
+    border-radius: 50%;
+    font-size: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-left: 8px solid #04114b;
+
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      background-color: #04114b;
+
+      &::before {
+        border-left: 8px solid #fff;
+      }
+    }
+  }
+
+  .slick-prev {
+    position: absolute;
+    top: 0;
+    right: 110px;
+
+    &:before {
+      transform: translateY(-50%) rotate(180deg);
+      left: 10px;
+    }
+  }
+  .slick-next {
+    position: absolute;
+    top: 0;
+    right: 55px;
+  }
+}

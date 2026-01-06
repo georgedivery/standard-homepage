@@ -27,4 +27,13 @@ jQuery(function ($) {
     }
   });
 
+  $('.slider-news').slick({
+    arrows: true,
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1, 
+  });
+
+  
+
 });
