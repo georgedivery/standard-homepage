@@ -1,0 +1,13 @@
+.list-socials {
+  margin-left: -10px;
+  display: flex;
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  li {
+    margin: 0 10px;
+  }
+}

@@ -1,4 +1,8 @@
 <section class="section-feed">
+
+<div class="section-bg-image" >
+    <img src="<?php echo esc_url( get_template_directory_uri())?>/assets/images/feed.png" alt="#">
+</div>
     <div class="label">
         Our Feed
     </div>
@@ -13,7 +17,7 @@
                             </p>
 
                             <p class="name">
-                                <i>icon</i>
+                               <i class="fa-brands fa-twitter"></i>
                                 @ Anthesis Group
                             </p>
                         </div>
@@ -26,7 +30,7 @@
                             </p>
 
                             <p class="name">
-                                <i>icon</i>
+                               <i class="fa-brands fa-twitter"></i>
                                 @ Anthesis Group
                             </p>
                         </div>
@@ -39,7 +43,7 @@
                             </p>
 
                             <p class="name">
-                                <i>icon</i>
+                               <i class="fa-brands fa-twitter"></i>
                                 @ Anthesis Group
                             </p>
                         </div>
@@ -59,19 +63,25 @@
                 <ul class="list-socials">
                     <li>
                         <a href="#">
-                            i
+                           <i class="fa-brands fa-youtube"></i>
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
-                            i
+                           <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
-                            i
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                           <i class="fa-brands fa-twitter"></i>
                         </a>
                     </li>
                 </ul>

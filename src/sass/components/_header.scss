@@ -1,16 +1,20 @@
-@use '../variables' as *;
+@use "../variables" as *;
 
 .site-header {
-  background-color: $color-white;
-  border-bottom: 1px solid $color-border;
-  padding: $spacing-md 0;
-  position: sticky;
+  padding: 20px 0;
+  position: absolute;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 100;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  color: #fff;
 }
 
-.site-header .container {
+body.admin-bar .site-header {
+  top: 32px;
+}
+
+.site-header .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,4 +40,10 @@
   font-size: $font-size-small;
   color: $color-text-light;
   margin: 0;
+}
+
+.header-sub-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
