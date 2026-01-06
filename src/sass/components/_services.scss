@@ -3,10 +3,11 @@
 .services {
   display: flex;
   flex-wrap: wrap;
-  gap: calc(12.5%);
+  gap: calc(16.5%);
   justify-content: center;
+
   & > li {
-    width: 25%;
+    width: 22%;
     margin-bottom: 100px;
   }
 }
@@ -14,10 +15,11 @@
 .service-item {
   position: relative;
   padding: 20px;
+
   &::before {
     content: "";
     position: absolute;
-    top: 75px;
+    top: 120px;
     left: 30%;
     right: 0;
     bottom: 0;
@@ -53,7 +55,10 @@
     width: 150px;
     height: 150px;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+    position: relative; left: 7px;
+    top: 5px;
+
     svg {
       path {
         transition: all 0.3s;
@@ -63,13 +68,14 @@
   strong {
     display: block;
     min-height: 54px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   span {
     margin-bottom: 20px;
     display: block;
     min-height: 44px;
+    font-size: 15px;
   }
 
   a {
@@ -78,5 +84,6 @@
     left: 0;
     bottom: 0;
     right: 0;
+    font-size: 22px;
   }
 }

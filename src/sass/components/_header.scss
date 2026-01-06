@@ -1,17 +1,26 @@
 @use "../variables" as *;
 
 .site-header {
-  padding: 20px 0;
+  padding: 16px 0;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
   color: #fff;
+
+  .shell {
+    max-width: 1750px;
+  }
 }
 
 body.admin-bar .site-header {
   top: 32px;
+}
+
+body:not(.page-template-page-home) .site-header {
+  background: #04114b;
+  color: #fff;
 }
 
 .site-header .header-inner {

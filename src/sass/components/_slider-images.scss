@@ -2,30 +2,38 @@
 
 .slider-images {
   margin: 0 -10px;
+  text-align: center;
   .slide-inner {
     text-align: center;
   }
 
-  .slide { 
+  .slide {
     padding: 0 10px;
-   }
+
+    img {
+      display: inline-block;
+    }
+  }
 
   h6 {
     font-size: 32px;
     font-weight: 700;
+    margin-bottom: 56px;
   }
 
   .slick-dots {
     display: flex;
-    padding-top: 30px;
+    padding-top: 50px;
     justify-content: center;
+
     li {
-      opacity: .5;
+      opacity: 0.5;
+      margin: 0 15px;
 
       &.slick-active {
         opacity: 1;
       }
-      margin: 0 7px;
+
       button {
         width: 24px;
         height: 24px;

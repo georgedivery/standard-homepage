@@ -7,9 +7,15 @@
   );
   color: #fff;
   min-height: 100vh;
-  padding: 150px 0 100px;
+  padding: 100px 0 100px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  .shell {
+    width: 100%;
+  }
 
   .section-overlay {
     position: absolute;
@@ -75,8 +81,11 @@
   }
 
   .section-title {
-    line-height: 1;
+    margin-top: 80px;
+    line-height: 1.1;
     font-size: 194px;
+    margin-bottom: 57px;
+    
     strong {
       display: flex;
       align-items: center;
@@ -96,12 +105,13 @@
 
         span {
           display: inline-block;
-          padding: 0 30px;
+          padding: 0 16px;
         }
 
         small {
           font-size: 24px;
           width: 50%;
+          padding-left: 25px;
         }
       }
 

@@ -2,8 +2,8 @@
 
 .btn {
   display: inline-block;
-  padding: $spacing-xs $spacing-md;
-  font-size: $font-size-base;
+  padding: 10px 30px;
+  font-size: 24px;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
@@ -26,6 +26,7 @@
 .btn_dark {
   border-color: #04114b;
   color: #04114b;
+  padding: 15px 20px;
 }
 
 .btn_orange {
@@ -39,6 +40,7 @@
 .btn_white {
   background: #fff;
   color: #04114b;
+    padding: 14px 40px;
 
   &:hover {
     background: #04114b;

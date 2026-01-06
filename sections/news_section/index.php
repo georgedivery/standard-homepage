@@ -9,7 +9,8 @@
                 <div class="slider-news">
                     <div class="slide">
                         <div class="slide-inner">
-                            <div class="slide-image" style="background-image:url(<?php echo esc_url( get_template_directory_uri())?>/assets/images/d46e7e2e0930558bb31d243ea7e510c1b758db3c.jpg)">
+                            <div class="slide-image"
+                                style="background-image:url(<?php echo esc_url( get_template_directory_uri())?>/assets/images/d46e7e2e0930558bb31d243ea7e510c1b758db3c.jpg)">
                                 <div class="slide-image-label">
                                     podcast
                                 </div>
@@ -35,7 +36,8 @@
 
                     <div class="slide">
                         <div class="slide-inner">
-                            <div class="slide-image" style="background-image:url(<?php echo esc_url( get_template_directory_uri())?>/assets/images/d46e7e2e0930558bb31d243ea7e510c1b758db3c.jpg)">
+                            <div class="slide-image"
+                                style="background-image:url(<?php echo esc_url( get_template_directory_uri())?>/assets/images/d46e7e2e0930558bb31d243ea7e510c1b758db3c.jpg)">
                                 <div class="slide-image-label">
                                     podcast
                                 </div>
@@ -62,21 +64,27 @@
             </div>
 
             <div class="section-aside">
-                <h3>
-                    News <span>+</span> Insights
-                </h3>
+                <div class="section-aside-inner">
 
-                <p>
-                    Stay up to date with all the latest news from Anthesis Group, including opinion pieces on the latest
-                    industry developments, advancements in sustainability consulting services, and how to measure the
-                    impact of sustainability.
-                </p>
+                    <h3>
+                        News <span>+</span> Insights
+                    </h3>
 
-                <p>
-                    <a href="#" class="btn btn_orange">
-                        View all
-                    </a>
-                </p>
+                    <p>
+                        Stay up to date with all the latest news from Anthesis Group, including opinion pieces on the
+                        latest
+                        industry developments, advancements in sustainability consulting services, and how to measure
+                        the
+                        impact of sustainability.
+                    </p>
+
+                    <p>
+                        <a href="#" class="btn btn_orange">
+                            View all
+                        </a>
+                    </p>
+
+                </div>
             </div>
 
         </div>

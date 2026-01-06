@@ -5,8 +5,9 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    padding: 50px 0;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    padding: 50px 0 0;
+    margin-bottom: 20px;
     align-items: center;
 
     &::before {
@@ -59,8 +60,10 @@
   }
 
   .form-content {
-    width: 50%;
+    width: 45%;
     padding: 0 50px;
+    position: relative;
+    top: -20px;
 
     .label {
       font-size: 24px;
@@ -71,17 +74,24 @@
     p {
       font-weight: 500;
       font-size: 22px;
+      letter-spacing: 0.03rem;
     }
   }
   .form-aside {
-    width: 50%;
+    width: 44%;
     padding: 0 50px;
   }
   .form-foot {
     width: 100%;
+    font-size: 20px;
 
     p {
-      &:last-child {padding-top: 20px; }
+       &:first-child {
+        margin-bottom: 66px;
+      }
+      &:last-child {
+        padding-top: 20px;
+      }
     }
   }
 
@@ -91,4 +101,6 @@
   .form-title strong {
     font-weight: 600;
   }
+
+  .btn { padding: 15px 40px; font-size: 24px; }
 }

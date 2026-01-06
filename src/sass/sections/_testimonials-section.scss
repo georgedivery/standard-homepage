@@ -1,15 +1,24 @@
 .section-testimonials {
   background: #04114b;
   color: #fff;
-  padding: 100px 0;
+  padding: 100px 0 80px;
   position: relative;
+
+  .shell { padding: 0 35px; }
 
   .section-head {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 33px;
     max-width: 1000px;
     margin: 0 auto;
+    font-size: 26px;
+
+    p {
+      font-weight: 600;
+    }
   }
+
+  .section-title { margin-bottom: 40px; }
 
   .label {
     padding-left: 10px;
@@ -17,8 +26,10 @@
     align-items: center;
     color: #fff;
     position: absolute;
-    top: 130px;
+    top: 150px;
     left: 0;
+    font-size: 16px;
+    text-transform: uppercase;
 
     &:before {
       content: "";
