@@ -5,6 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 jQuery(function ($) {
 
+  var nav = $('#site-navigation');
+  if (nav.length) {
+    var topLevelItems = nav.find('ul').find('li');
+    if (topLevelItems.length > 4) {
+      nav.addClass('navigation-large');
+    }
+  }
+
   const dotSvg = `
   <button>
     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
