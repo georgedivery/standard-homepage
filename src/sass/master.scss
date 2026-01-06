@@ -8,6 +8,7 @@
 @use 'components/slick';
 @use 'components/slider-images';
 @use 'components/slider-news';
+@use 'components/slider-testimonials';
 @use 'components/container';
 @use 'components/header';
 @use 'components/navigation';
@@ -23,10 +24,11 @@
 @use 'components/comments';
 @use 'components/utilities';
 
-@use 'sections/home-hero';
+@use 'sections/hero-section';
 @use 'sections/analytics-section';
 @use 'sections/services-section';
 @use 'sections/news-section';
+@use 'sections/testimonials-section';
 
 // Responsive
 @use 'responsive';

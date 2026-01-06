@@ -31,9 +31,18 @@ jQuery(function ($) {
     arrows: true,
     dots: false,
     slidesToShow: 1,
-    slidesToScroll: 1, 
+    slidesToScroll: 1,
   });
 
-  
+  $('.testimonial-slider').slick({
+    arrows: true,
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
+
+
+
+
 
 });

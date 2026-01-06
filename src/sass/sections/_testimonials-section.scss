@@ -1,0 +1,32 @@
+.section-testimonials {
+  background: #04114b;
+  color: #fff;
+  padding: 100px 0;
+  position: relative;
+
+  .section-head {
+    text-align: center;
+    padding-bottom: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .label {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 130px;
+    left: 0;
+
+    &:before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      background: #fff;
+      display: block;
+      margin-right: 10px;
+    }
+  }
+}
