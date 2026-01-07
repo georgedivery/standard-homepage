@@ -1,5 +1,26 @@
 # Devrix WordPress Theme
 
+## 📦 Full Project Archive
+
+Full project archive - the folder should be extracted into a project folder:
+
+**Archive link:** [https://drive.google.com/file/d/170AHP1YP9EPFZbNYbkthbl1gHviBKN4z/view?usp=sharing](https://drive.google.com/file/d/170AHP1YP9EPFZbNYbkthbl1gHviBKN4z/view?usp=sharing)
+
+**The database** is located in the `sync` folder.
+
+### 🔄 Quick URL Replacement in Database
+
+Here is a snippet for quickly replacing URLs in the database:
+
+```sql
+UPDATE wp_options SET option_value = replace(option_value, 'http://localhost/DevriX', 'http://devrix.test') WHERE option_name = 'home' OR option_name = 'siteurl';
+UPDATE wp_posts SET post_content = replace(post_content, 'http://localhost/DevriX', 'http://devrix.test');
+UPDATE wp_postmeta SET meta_value = replace(meta_value,'http://localhost/DevriX','http://devrix.test');
+UPDATE wp_posts SET guid = REPLACE (guid, 'http://localhost/DevriX', 'http://devrix.test');
+```
+
+---
+
 Custom WordPress theme built from scratch without Elementor or Gutenberg dependencies. This theme includes a modern build process using Gulp for asset compilation and optimization.
 
 ## 📁 Project Structure
