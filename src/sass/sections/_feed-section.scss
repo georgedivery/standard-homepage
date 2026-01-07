@@ -1,11 +1,13 @@
+@use "../variables" as *;
+
 .section-feed {
-  padding: 69px 0 30px;
+  padding: 69px 0 $spacing-30;
   background: linear-gradient(
     0deg,
     hsla(230, 73%, 35%, 1) 0%,
     hsla(230, 90%, 15%, 1) 100%
   );
-  color: #fff;
+  color: $color-white;
   position: relative;
 
   .section-bg-image {
@@ -16,23 +18,23 @@
   }
 
   .label {
-    padding-left: 10px;
+    padding-left: $spacing-10;
     display: flex;
     align-items: center;
-    color: #fff;
+    color: $color-white;
     position: absolute;
     top: 123px;
     left: 0;
-    font-size: 16px;
+    font-size: $font-size-16;
     text-transform: uppercase;
 
     &:before {
       content: "";
-      width: 30px;
+      width: $spacing-30;
       height: 1px;
-      background: #fff;
+      background: $color-white;
       display: block;
-      margin-right: 10px;
+      margin-right: $spacing-10;
     }
   }
 
@@ -49,10 +51,10 @@
   .section-aside {
     padding-left: 42px;
      width: 36%;
-     padding-right: 50px;
+     padding-right: $spacing-50;
     .section-aside-inner {
-      top: -30px;
-      padding: 50px 0;
+      top: -$spacing-30;
+      padding: $spacing-50 0;
       padding-left: 42px;
       position: relative;
 
@@ -64,7 +66,7 @@
         left: 0%;
         height: 100%;
         padding: 1px;
-        border-radius: 20px;
+        border-radius: $border-radius-20;
 
         background: linear-gradient(
           to right,
@@ -80,7 +82,7 @@
         pointer-events: none;
       }
 
-      .section-title { margin-bottom: 30px; }
+      .section-title { margin-bottom: $spacing-30; }
     }
   }
 }

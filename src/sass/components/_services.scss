@@ -8,13 +8,13 @@
 
   & > li {
     width: 22%;
-    margin-bottom: 100px;
+    margin-bottom: $spacing-100;
   }
 }
 
 .service-item {
   position: relative;
-  padding: 20px;
+  padding: $spacing-20;
 
   &::before {
     content: "";
@@ -24,7 +24,7 @@
     right: 0;
     bottom: 0;
     padding: 1px;
-    border-radius: 20px;
+    border-radius: $border-radius-20;
 
     background: linear-gradient(
       to left,
@@ -47,7 +47,7 @@
 
   &:hover {
     .icon svg path {
-      fill: #ff671f;
+      fill: $color-orange;
     }
   }
 
@@ -61,18 +61,18 @@
 
     svg {
       path {
-        transition: all 0.3s;
+        transition: all $transition-base;
       }
     }
   }
   strong {
     display: block;
     min-height: 54px;
-    margin-bottom: 20px;
+    margin-bottom: $spacing-20;
   }
 
   span {
-    margin-bottom: 20px;
+    margin-bottom: $spacing-20;
     display: block;
     min-height: 44px;
     font-size: 15px;

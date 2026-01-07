@@ -1,11 +1,13 @@
+@use "../variables" as *;
+
 .section-service {
-  background: #04114b;
+  background: $color-dark-blue;
   background: radial-gradient(
     circle,
-    rgba(4, 17, 75, 1) 0%,
+    $color-dark-blue-rgba-100 0%,
     rgba(43, 70, 197, 1) 100%
   );
-  color: #fff;
+  color: $color-white;
   padding: 150px 0 94px;
   position: relative;
   overflow: hidden;
@@ -13,7 +15,7 @@
   .section-overlay-ornament-left {
     width: 400px;
     height: 400px;
-    background: #ff671f;
+    background: $color-orange;
     filter: blur(200px);
     opacity: 0.9;
     bottom: 0;
@@ -28,7 +30,7 @@
   .section-overlay-ornament-right {
     width: 400px;
     height: 400px;
-    background: #ff671f;
+    background: $color-orange;
     filter: blur(200px);
     opacity: 0.9;
     top: 10%;
@@ -41,29 +43,29 @@
   }
 
   .label {
-    padding-left: 10px;
+    padding-left: $spacing-10;
     display: flex;
     align-items: center;
-    color: #fff;
+    color: $color-white;
     position: absolute;
     top: 200px;
     left: 0;
-    font-size: 16px;
+    font-size: $font-size-16;
     text-transform: uppercase;
 
     &:before {
       content: "";
-      width: 30px;
+      width: $spacing-30;
       height: 1px;
-      background: #fff;
+      background: $color-white;
       display: block;
-      margin-right: 10px;
+      margin-right: $spacing-10;
     }
   }
 
   .section-head {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: $spacing-50;
     p {
       width: 70%;
       margin: 0 auto;
@@ -72,5 +74,9 @@
 
   .section-foot {
     text-align: center;
+  }
+  
+  .section-head {
+    padding-bottom: $spacing-50;
   }
 }

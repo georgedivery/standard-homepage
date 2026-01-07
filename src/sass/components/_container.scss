@@ -15,8 +15,8 @@
 .shell {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 $spacing-50;
   @media (max-width: 1200px) {
-    padding: 0 30px;
+    padding: 0 $spacing-30;
   }
 }

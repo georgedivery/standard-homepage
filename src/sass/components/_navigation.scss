@@ -14,11 +14,11 @@
     margin: 0;
     flex-wrap: wrap;
     padding: 0;
-    font-size: 20px;
+    font-size: $font-size-20;
 
     > li {
       > a {
-        padding: 5px 10px;
+        padding: 5px $spacing-10;
         display: inline-block;
         position: relative;
         text-transform: uppercase;
@@ -29,13 +29,13 @@
           position: absolute;
           content: "";
           top: 110%;
-          left: 10px;
+          left: $spacing-10;
           height: 2px;
           opacity: 0;
-          right: 10px;
-          transition: all 0.3s;
+          right: $spacing-10;
+          transition: all $transition-base;
           margin-top: -2px;
-          background: #fff;
+          background: $color-white;
         }
 
         &:hover:before {
@@ -62,22 +62,22 @@
       visibility: hidden;
       left: 50%;
       transform: translateX(-50%);
-      background: #fff;
-      border-radius: 16px;
-      color: #04114b;
+      background: $color-white;
+      border-radius: $border-radius-16;
+      color: $color-dark-blue;
       min-width: 200px;
-      padding: 10px 5px;
-      transition: all 0.3s;
+      padding: $spacing-10 5px;
+      transition: all $transition-base;
 
       li {
         a {
-          padding: 5px 10px;
+          padding: 5px $spacing-10;
           display: block;
-          border-radius: 10px;
-          transition: all 0.3s;
+          border-radius: $spacing-10;
+          transition: all $transition-base;
           &:hover {
-            background: #04114b;
-            color: #fff;
+            background: $color-dark-blue;
+            color: $color-white;
           }
         }
       }
@@ -87,7 +87,7 @@
   &.navigation-large {
     width: 100%;
     order: 3;
-    padding: 20px;
+    padding: $spacing-20;
   }
 
   .current_page_item > a:before {

@@ -1,25 +1,27 @@
+@use "../variables" as *;
+
 .section-news {
-  padding: 92px 0 100px;
+  padding: 92px 0 $spacing-100;
   position: relative;
 
   .label {
-    padding-left: 10px;
+    padding-left: $spacing-10;
     display: flex;
     align-items: center;
 
     position: absolute;
     top: 240px;
     left: 0;
-    font-size: 16px;
+    font-size: $font-size-16;
     text-transform: uppercase;
 
     &:before {
       content: "";
-      width: 30px;
+      width: $spacing-30;
       height: 1px;
-      background: #04114b;
+      background: $color-dark-blue;
       display: block;
-      margin-right: 10px;
+      margin-right: $spacing-10;
     }
   }
   .section-inner {
@@ -34,7 +36,7 @@
     width: 55%;
     padding-left: 200px;
 
-    font-size: 24px;
+    font-size: $font-size-base;
 
     p {
       font-weight: 500;
@@ -47,7 +49,7 @@
 
     h3 {
       span {
-        color: #ff671f;
+        color: $color-orange;
       }
     }
   }
@@ -64,12 +66,12 @@
       left: 0;
       height: 100%;
       padding: 1px;
-      border-radius: 20px;
+      border-radius: $border-radius-20;
       z-index: -1;
 
       background: linear-gradient(
         to right,
-        rgba(4, 17, 75, 1),
+        $color-dark-blue-rgba-100,
         rgba(255, 103, 31, 0)
       );
 

@@ -8,31 +8,31 @@ input[type="search"],
 input[type="number"],
 input[type="tel"] {
   height: 57px;
-  padding: 0 30px;
-  border-radius: 50px;
-  background: rgba(4, 17, 75, 0.1);
+  padding: 0 $spacing-30;
+  border-radius: $border-radius-50;
+  background: $color-dark-blue-rgba-10;
   width: 100%;
-  border: 1px solid #04114b;
-  color: #04114b;
+  border: 1px solid $color-dark-blue;
+  color: $color-dark-blue;
   font-size: inherit;
   &::placeholder {
-    color: #04114b;
+    color: $color-dark-blue;
   }
 }
 
 textarea,
 select {
   width: 100%;
-  padding: 30px;
+  padding: $spacing-30;
   font-size: inherit;
 
-  border: 1px solid #04114b;
-  border-radius: 16px;
-  background: rgba(4, 17, 75, 0.1);
-  color: #04114b;
+  border: 1px solid $color-dark-blue;
+  border-radius: $border-radius-16;
+  background: $color-dark-blue-rgba-10;
+  color: $color-dark-blue;
 
   &::placeholder {
-    color: #04114b;
+    color: $color-dark-blue;
   }
 
   &:focus {
@@ -90,14 +90,14 @@ label {
 }
 
 .form-row {
-  margin-bottom: 30px;
+  margin-bottom: $spacing-30;
 }
 
 .field {
   height: 57px;
-  padding: 0 20px;
-  border-radius: 50px;
-  background: rgba(4, 17, 75, 0.5);
+  padding: 0 $spacing-20;
+  border-radius: $border-radius-50;
+  background: $color-dark-blue-rgba-50;
 }
 
 .checkbox {
@@ -114,13 +114,13 @@ label {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
-   top: -10px;
+   top: -$spacing-10;
       left: 3px;
-      font-size: 30px;
+      font-size: $font-size-30;
   }
   label {
     position: relative;
-    padding-left: 40px;
+    padding-left: $spacing-40;
     cursor: pointer;
     user-select: none;
     &:before {
@@ -128,10 +128,10 @@ label {
       position: absolute;
       top: 2px;
       left: 0;
-      width: 20px;
-      height: 20px;
+      width: $spacing-20;
+      height: $spacing-20;
       display: inline-block;
-      border: 1px solid #04114b;
+      border: 1px solid $color-dark-blue;
     }
   }
 }

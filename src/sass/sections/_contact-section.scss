@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .section-contact {
-  padding: 142px 0 50px; 
+  padding: 142px 0 $spacing-50; 
 }

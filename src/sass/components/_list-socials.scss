@@ -1,13 +1,15 @@
+@use "../variables" as *;
+
 .list-socials {
-  margin-left: -10px;
+  margin-left: -$spacing-10;
   display: flex;
   a {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: $color-white;
   }
 
   li {
-    margin: 0 10px;
+    margin: 0 $spacing-10;
   }
 }

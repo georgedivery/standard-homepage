@@ -1,14 +1,14 @@
 @use "../variables" as *;
 
 .slider-images {
-  margin: 0 -10px;
+  margin: 0 -$spacing-10;
   text-align: center;
   .slide-inner {
     text-align: center;
   }
 
   .slide {
-    padding: 0 10px;
+    padding: 0 $spacing-10;
 
     img {
       display: inline-block;
@@ -23,7 +23,7 @@
 
   .slick-dots {
     display: flex;
-    padding-top: 50px;
+    padding-top: $spacing-50;
     justify-content: center;
 
     li {

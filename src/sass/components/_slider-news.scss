@@ -1,20 +1,20 @@
 @use "../variables" as *;
 
 .slider-news {
-  padding-top: 50px;
+  padding-top: $spacing-50;
   padding-right: 25px;
   margin-right: -25px;
 
   .slide {
-    padding: 0 30px;
+    padding: 0 $spacing-30;
     h4 {
       font-size: 22px;
       font-weight: 800;
-      margin-bottom: 20px;
+      margin-bottom: $spacing-20;
     }
 
     p {
-      font-size: 18px;
+      font-size: $font-size-large;
       strong {
         font-weight: 600;
         font-size: 22px;
@@ -26,7 +26,7 @@
     padding-bottom: 61%;
     background-position: center;
     background-size: cover;
-    border-radius: 16px;
+    border-radius: $border-radius-16;
     position: relative;
     margin-bottom: 87px;
 
@@ -38,7 +38,7 @@
       left: 50%;
       height: 105%;
       padding: 1px;
-      border-radius: 20px;
+      border-radius: $border-radius-20;
       z-index: -1;
 
       background: linear-gradient(
@@ -56,17 +56,17 @@
     }
 
     .slide-image-label {
-      background: #fff;
+      background: $color-white;
       text-transform: uppercase;
       position: absolute;
       left: -1px;
-      top: 40px;
-      padding: 0 20px;
-      border-radius: 0 20px 20px 0;
+      top: $spacing-40;
+      padding: 0 $spacing-20;
+      border-radius: 0 $border-radius-20 $border-radius-20 0;
       font-weight: 600;
-      height: 30px;
-      font-size: 14px;
-      line-height: 30px;
+      height: $spacing-30;
+      font-size: $font-size-small;
+      line-height: $spacing-30;
     }
   }
   .slick-arrow {
@@ -75,11 +75,11 @@
     width: 33px;
     height: 33px;
     background: rgba(0, 0, 0, 0);
-    border: 1px solid #04114b;
+    border: 1px solid $color-dark-blue;
     border-radius: 50%;
     font-size: 0;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all $transition-base;
 
     &:before {
       content: "";
@@ -89,7 +89,7 @@
 
       border-top: 8px solid transparent;
       border-bottom: 8px solid transparent;
-      border-left: 8px solid #04114b;
+      border-left: 8px solid $color-dark-blue;
 
       top: 50%;
       left: 12px;
@@ -97,10 +97,10 @@
     }
 
     &:hover {
-      background-color: #04114b;
+      background-color: $color-dark-blue;
 
       &::before {
-        border-left: 8px solid #fff;
+        border-left: 8px solid $color-white;
       }
     }
   }
@@ -112,7 +112,7 @@
 
     &:before {
       transform: translateY(-50%) rotate(180deg);
-      left: 10px;
+      left: $spacing-10;
     }
   }
   .slick-next {

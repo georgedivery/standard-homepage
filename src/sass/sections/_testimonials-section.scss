@@ -1,7 +1,9 @@
+@use "../variables" as *;
+
 .section-testimonials {
-  background: #04114b;
-  color: #fff;
-  padding: 100px 0 80px;
+  background: $color-dark-blue;
+  color: $color-white;
+  padding: $spacing-100 0 80px;
   position: relative;
 
   .shell { padding: 0 35px; }
@@ -18,26 +20,26 @@
     }
   }
 
-  .section-title { margin-bottom: 40px; }
+  .section-title { margin-bottom: $spacing-40; }
 
   .label {
-    padding-left: 10px;
+    padding-left: $spacing-10;
     display: flex;
     align-items: center;
-    color: #fff;
+    color: $color-white;
     position: absolute;
     top: 150px;
     left: 0;
-    font-size: 16px;
+    font-size: $font-size-16;
     text-transform: uppercase;
 
     &:before {
       content: "";
-      width: 30px;
+      width: $spacing-30;
       height: 1px;
-      background: #fff;
+      background: $color-white;
       display: block;
-      margin-right: 10px;
+      margin-right: $spacing-10;
     }
   }
 }

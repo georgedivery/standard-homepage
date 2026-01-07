@@ -17,8 +17,8 @@ body {
   font-family: $font-family-base;
   font-size: 22px;
   line-height: 1.3;
-  color: #04114b;
-  background-color: $color-bg;
+  color: $color-dark-blue;
+  background-color: $color-white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -51,16 +51,16 @@ h4 {
 
 @media (max-width: 1200px) {
   h1 {
-    font-size: 50px;
+    font-size: $font-size-h4;
   }
   h2 {
-    font-size: 50px;
+    font-size: $font-size-h4;
   }
   h3 {
-    font-size: 50px;
+    font-size: $font-size-h4;
   }
   h4 {
-    font-size: 50px;
+    font-size: $font-size-h4;
   }
 }
 

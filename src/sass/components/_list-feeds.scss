@@ -1,11 +1,13 @@
+@use "../variables" as *;
+
 .list-feeds {
   li {
-    margin-bottom: 40px;
+    margin-bottom: $spacing-40;
 
     div {
       background-color: #04114bcc;
-      padding: 40px;
-      border-radius: 16px;
+      padding: $spacing-40;
+      border-radius: $border-radius-16;
 
       p {
         margin: 0;
@@ -22,6 +24,6 @@
     padding-top: 48px;
     display: flex;
     align-items: center;
-    i {  margin-right: 10px; font-size: 28px; }
+    i {  margin-right: $spacing-10; font-size: 28px; }
   }
 }

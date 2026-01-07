@@ -1,13 +1,15 @@
+@use "../variables" as *;
+
 .section-hero {
-  background: #04114b;
+  background: $color-dark-blue;
   background: radial-gradient(
     circle,
-    rgba(4, 17, 75, 1) 0%,
+    $color-dark-blue-rgba-100 0%,
     rgba(43, 70, 197, 1) 100%
   );
-  color: #fff;
+  color: $color-white;
   min-height: 100vh;
-  padding: 100px 0 100px;
+  padding: $spacing-100 0 $spacing-100;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -29,7 +31,7 @@
   .section-overlay-ornament-top {
     width: 400px;
     height: 400px;
-    background: #ff671f;
+    background: $color-orange;
     filter: blur(200px);
     opacity: 0.9;
     top: 0;
@@ -44,7 +46,7 @@
   .section-overlay-ornament-left {
     width: 400px;
     height: 400px;
-    background: #ff671f;
+    background: $color-orange;
     filter: blur(200px);
     opacity: 0.9;
     top: 60%;
@@ -59,7 +61,7 @@
   .section-overlay-ornament-right {
     width: 400px;
     height: 400px;
-    background: #ff671f;
+    background: $color-orange;
     filter: blur(200px);
     opacity: 0.9;
     bottom: 0%;
@@ -109,7 +111,7 @@
         }
 
         small {
-          font-size: 24px;
+          font-size: $font-size-base;
           width: 50%;
           padding-left: 25px;
         }
@@ -139,7 +141,7 @@
 
       strong:nth-child(2) {
         small {
-          font-size: 20px;
+          font-size: $font-size-20;
         }
       }
     }
@@ -152,11 +154,11 @@
 
       strong:nth-child(2) {
         i {
-          width: 100px;
-          height: 100px;
+          width: $spacing-100;
+          height: $spacing-100;
         }
         small {
-          font-size: 18px;
+          font-size: $font-size-large;
         }
       }
     }
@@ -169,8 +171,8 @@
       display: flex;
       align-items: center;
       i {
-        height: 50px;
-        width: 50px;
+        height: $spacing-50;
+        width: $spacing-50;
         display: block;
         background-size: 100%;
         background-position: center;
@@ -178,8 +180,8 @@
       }
 
       span {
-        padding-left: 20px;
-        width: calc(100% - 50px);
+        padding-left: $spacing-20;
+        width: calc(100% - #{$spacing-50});
       }
     }
 
@@ -203,24 +205,24 @@
     min-height: auto;
 
     .section-overlay-ornament-top {
-      filter: blur(100px);
+      filter: blur($spacing-100);
       width: 200px;
       height: 200px;
-      margin-left: -100px;
+      margin-left: -$spacing-100;
       margin-top: -200px;
     }
     .section-overlay-ornament-left {
-      filter: blur(100px);
+      filter: blur($spacing-100);
       width: 200px;
       height: 200px;
-      margin-left: -100px;
+      margin-left: -$spacing-100;
       margin-top: -200px;
     }
     .section-overlay-ornament-right {
-      filter: blur(100px);
+      filter: blur($spacing-100);
       width: 200px;
       height: 200px;
-      margin-left: -100px;
+      margin-left: -$spacing-100;
       margin-top: -200px;
     }
 

@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .section-analytics {
   padding: 136px 0 120px;
   position: relative;
@@ -11,26 +13,26 @@
     top: 50%;
     transform: translateY(-50%);
     left: 17px;
-    margin-top: -20px;
+    margin-top: -$spacing-20;
   }
   .label {
-    padding-left: 10px;
+    padding-left: $spacing-10;
     display: flex;
     align-items: center;
-    color: #04104a;
+    color: $color-dark-blue;
     position: absolute;
     top: 150px;
     left: 0;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: $font-size-16;
 
     &:before {
       content: "";
-      width: 30px;
+      width: $spacing-30;
       height: 1px;
-      background: #04104a;
+      background: $color-dark-blue;
       display: block;
-      margin-right: 10px;
+      margin-right: $spacing-10;
     }
   }
 
@@ -47,7 +49,7 @@
     p {
       letter-spacing: 0.05rem;
       line-height: 1.22;
-      margin-bottom: 50px;
+      margin-bottom: $spacing-50;
 
       &:last-child {
         margin-bottom: 0;
@@ -65,7 +67,7 @@
     width: 53%;
     position: relative;
     left: -35px;
-    padding: 50px 0;
+    padding: $spacing-50 0;
   }
 
   @media (max-width: 1800px) {

@@ -7,7 +7,7 @@
   left: 0;
   width: 100%;
   z-index: 100;
-  color: #fff;
+  color: $color-white;
 
   .shell {
     max-width: 1750px;
@@ -19,8 +19,8 @@ body.admin-bar .site-header {
 }
 
 body:not(.page-template-page-home) .site-header {
-  background: #04114b;
-  color: #fff;
+  background: $color-dark-blue;
+  color: $color-white;
 }
 
 .site-header .header-inner {
@@ -31,7 +31,7 @@ body:not(.page-template-page-home) .site-header {
 }
 
 .site-title {
-  font-size: 20px;
+  font-size: $font-size-20;
   font-weight: bold;
   margin: 0;
 

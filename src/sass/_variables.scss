@@ -1,13 +1,18 @@
 // Colors
 $color-primary: #0073aa;
 $color-secondary: #005a87;
+$color-dark-blue: #04114b;
+$color-orange: #ff671f;
 $color-text: #333;
 $color-text-light: #666;
-$color-bg: #fff;
 $color-bg-light: #f9f9f9;
 $color-border: #e0e0e0;
 $color-white: #fff;
-$color-black: #000;
+
+// Color RGBA variants
+$color-dark-blue-rgba-10: rgba(4, 17, 75, 0.1);
+$color-dark-blue-rgba-50: rgba(4, 17, 75, 0.5);
+$color-dark-blue-rgba-100: rgba(4, 17, 75, 1);
 
 // Typography
 $font-family-base: "Montserrat", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -15,16 +20,14 @@ $font-family-heading: $font-family-base;
 
 $font-size-base: 24px;
 $font-size-small: 14px;
+$font-size-16: 16px;
 $font-size-large: 18px;
+$font-size-20: 20px;
+$font-size-30: 30px;
 $font-size-h1: 84px;
 $font-size-h2: 84px;
 $font-size-h3: 84px;
 $font-size-h4: 50px;
-$font-size-h5: 50px;
-$font-size-h6: 40px;
-
-$line-height-base: 1.6;
-$line-height-heading: 1.2;
 
 // Spacing
 $spacing-xs: 0.5rem;
@@ -32,17 +35,26 @@ $spacing-sm: 1rem;
 $spacing-md: 1.5rem;
 $spacing-lg: 2rem;
 $spacing-xl: 3rem;
+$spacing-10: 10px;
+$spacing-20: 20px;
+$spacing-30: 30px;
+$spacing-40: 40px;
+$spacing-50: 50px;
+$spacing-100: 100px;
 
 // Layout
 $container-width: 1200px;
 $container-padding: 20px;
 
+// Border radius
+$border-radius-16: 16px;
+$border-radius-20: 20px;
+$border-radius-30: 30px;
+$border-radius-50: 50px;
+
 // Breakpoints
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
 
 // Transitions
 $transition-base: 0.3s ease;
-

@@ -53,12 +53,7 @@ get_header();
             ));
             ?>
             
-            <?php
-            // Comments
-            if (comments_open() || get_comments_number()) :
-                comments_template();
-            endif;
-            ?>
+         
         <?php endwhile; ?>
     </div>
 </main>
