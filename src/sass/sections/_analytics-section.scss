@@ -95,4 +95,33 @@
       font-size: inherit;
     }
   }
+
+  @media (max-width: 767px) {
+    padding: 75px 0;
+    .label {
+      display: none;
+    }
+
+    .section-aside {
+      width: 100%;
+      order: 2;
+    }
+
+    .section-content {
+      width: 100%;
+      order: 1;
+
+      p {
+        margin-bottom: 30px;
+      }
+    }
+
+    .section-line-ornament {
+      display: none;
+    }
+
+    .slider-images-outer {
+      padding-bottom: 0;
+    }
+  }
 }

@@ -20,7 +20,6 @@
     font-weight: 700;
     margin-bottom: 56px;
   }
-  
 
   .slick-dots {
     display: flex;
@@ -45,6 +44,16 @@
           height: 100%;
         }
       }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .slick-dots {
+      padding-top: 20px;
+    }
+
+    h6 {
+      margin-bottom: 30px;
     }
   }
 }

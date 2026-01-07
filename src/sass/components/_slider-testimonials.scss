@@ -121,7 +121,29 @@
     right: $spacing-20;
   }
 
-  @media screen and (max-width:$media1200) {
+  @media screen and (max-width: $media1200) {
     font-size: inherit;
+  }
+
+  @media screen and (max-width: 767px) { 
+    margin: 0 -25px;
+    font-size: 14px;
+    .slide {
+      .slide-inner {
+        padding: 50px 10px 40px 10px;
+
+        svg:first-child {
+          left: 0;
+        }
+      }
+      .slide-bottom {
+        .sup-p {
+        }
+
+        img {
+          max-width: 50px;
+        }
+      }
+    }
   }
 }

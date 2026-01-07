@@ -109,3 +109,57 @@
     display: block;
   }
 }
+
+@media screen and (max-width:1024px){
+  .main-navigation {
+    border-bottom: 1px solid $color-dark-blue;
+    display: none;
+    background: #fff;
+    color: #04114b;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    padding: 10px 20px;
+
+    > ul {
+      > li {
+        text-align: right;
+        > a {
+          display: block;
+        }
+      }
+    }
+
+    .menu-item-has-children {
+      & > ul {
+        position: static;
+        top: 0%;
+        opacity: 1;
+        visibility: visible;
+        left: 0%;
+        transform: none;
+        background: $color-white;
+        border-radius: $border-radius-16;
+        color: $color-dark-blue;
+        min-width: 100%;
+        text-align: right;
+        padding-right: 40px;
+        padding-bottom: 0;
+
+        li {
+          a {
+            padding: 5px $spacing-10;
+            display: block;
+            border-radius: $spacing-10;
+            transition: all $transition-base;
+            &:hover {
+              background: $color-dark-blue;
+              color: $color-white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

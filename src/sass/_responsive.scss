@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use "variables" as *;
 
 // Responsive styles
 @media (max-width: 1024px) {
@@ -6,18 +6,10 @@
     flex-direction: column;
     gap: $spacing-md;
   }
-
-    .main-navigation {
-      display: none;
-    }
   .main-navigation ul {
     flex-direction: column;
     gap: $spacing-xs;
     text-align: center;
-  }  
-
-  .post-title {
-    font-size: $font-size-h2;
   }
 
   .footer-widgets {
@@ -27,16 +19,11 @@
   .pagination {
     flex-direction: column;
     align-items: center;
-  }  
+  }
 }
 
 @media (max-width: $media576) {
   .container {
     padding: 0 $spacing-sm;
   }
-
-  h1 { font-size: $font-size-h2; }
-  h2 { font-size: $font-size-h3; }
-  h3 { font-size: $font-size-h4; }
 }
-

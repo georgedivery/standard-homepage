@@ -22,13 +22,18 @@
     outline-offset: 2px;
   }
 
-  @media screen and (max-width:$media1800) {
+  @media screen and (max-width: $media1800) {
     font-size: 20px;
   }
 
-  @media screen and (max-width:$media1200) {
+  @media screen and (max-width: $media1200) {
     font-size: 18px;
     padding: 15px $spacing-20;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+    padding: 12px $spacing-20;
   }
 }
 
@@ -43,7 +48,6 @@
   &:hover {
     background: $color-dark-blue;
     color: $color-white;
-    
   }
 }
 
@@ -142,4 +146,58 @@
 .btn-small {
   padding: 0.25rem $spacing-sm;
   font-size: $font-size-small;
+}
+
+/* burger */
+
+.btn-burger {
+  z-index: 3;
+  transition: all 0.3s;
+  margin-left: 10px; 
+  display: none;
+  width: 24px;
+  height: 22px;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+.btn-burger span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.btn-burger span:nth-child(1) {
+  top: 0px;
+}
+.btn-burger span:nth-child(2) {
+  top: 10px;
+}
+.btn-burger span:nth-child(3) {
+  top: 20px;
+}
+
+.btn-burger.open span:nth-child(1) {
+  top: 10px;
+  transform: rotate(135deg);
+}
+.btn-burger.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+.btn-burger.open span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-135deg);
+}
+
+@media (max-width: 1024px) {
+  .btn-burger {
+    display: inline-block;
+  }
 }

@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
- 
+
     <?php wp_head(); ?>
 </head>
 
@@ -25,20 +25,23 @@
 
                     <div class="site-branding">
                         <div class="site-logo">
-                            <img src="<?php echo esc_url( get_template_directory_uri())?>/assets/images/Logo.png"
+                         <a href="<?php echo home_url();?>">
+                            
+                               <img src="<?php echo esc_url( get_template_directory_uri())?>/assets/images/Logo.png"
                                 alt="#">
+                         </a>
                         </div>
                     </div>
 
                     <nav id="site-navigation" class="main-navigation">
                         <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'primary',
-                    'menu_id' => 'primary-menu',
-                    'container' => false,
-                    'fallback_cb' => 'devrix_fallback_menu',
-                ));
-                ?>
+                            wp_nav_menu(array(
+                                'theme_location' => 'primary',
+                                'menu_id' => 'primary-menu',
+                                'container' => false,
+                                'fallback_cb' => 'devrix_fallback_menu',
+                            ));
+                        ?>
                     </nav>
 
                     <div class="header-sub-nav">
@@ -66,6 +69,12 @@
                                     stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </a>
+
+                        <span class="btn-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
                     </div>
 
                 </div>

@@ -1,42 +1,42 @@
 // Variables and Mixins
-@use 'variables' as *;
+@use "variables" as *;
 
 // Reset and Base
-@use 'reset';
+@use "reset";
 
 // Layout Components
-@use 'components/slick';
-@use 'components/slider-images';
-@use 'components/slider-news';
-@use 'components/slider-testimonials';
-@use 'components/list-feeds';
-@use 'components/list-socials';
-@use 'components/container';
-@use 'components/header';
-@use 'components/navigation';
-@use 'components/footer';
-@use 'components/contact-form';
+@use "components/slick";
+@use "components/slider-images";
+@use "components/slider-news";
+@use "components/slider-testimonials";
+@use "components/list-feeds";
+@use "components/list-socials";
+@use "components/container";
+@use "components/header";
+@use "components/navigation";
+@use "components/footer";
+@use "components/contact-form";
 
 // UI Components
-@use 'components/buttons';
-@use 'components/services';
-@use 'components/forms';
-@use 'components/posts';
-@use 'components/sidebar';
-@use 'components/pagination';
-@use 'components/comments';
-@use 'components/utilities';
+@use "components/buttons";
+@use "components/services";
+@use "components/forms";
+@use "components/posts";
+@use "components/sidebar";
+@use "components/pagination";
+@use "components/comments";
+@use "components/utilities";
 
-@use 'sections/hero-section';
-@use 'sections/analytics-section';
-@use 'sections/services-section';
-@use 'sections/news-section';
-@use 'sections/testimonials-section';
-@use 'sections/feed-section';
-@use 'sections/contact-section';
+@use "sections/hero-section";
+@use "sections/analytics-section";
+@use "sections/services-section";
+@use "sections/news-section";
+@use "sections/testimonials-section";
+@use "sections/feed-section";
+@use "sections/contact-section";
 
 // Responsive
-@use 'responsive';
+@use "responsive";
 
 // Main Content Area
 .site-content {
@@ -77,4 +77,20 @@
   margin: 0 auto;
 }
 
-article.post { padding: $spacing-100 0; }
+article.post {
+  padding: $spacing-100 0;
+}
+
+.site-logo {
+  width: 222px;
+}
+.site-logo img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .site-logo {
+    width: 100px;
+  }
+}

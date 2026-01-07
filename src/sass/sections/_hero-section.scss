@@ -208,6 +208,8 @@
 
     .section-title {
       font-size: 70px;
+      padding: 0 40px;
+       
 
       strong:nth-child(2) {
         justify-content: flex-start;
@@ -260,7 +262,7 @@
     }
 
     .section-title {
-      font-size: 45px;
+      font-size: 45px; 
 
       strong:nth-child(2) {
         justify-content: flex-start;

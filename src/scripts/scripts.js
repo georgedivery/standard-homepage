@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 jQuery(function ($) {
 
+  $('.btn-burger').on('click', function (){
+    $(this).toggleClass('open')
+    $('.main-navigation').toggleClass('open')
+    $('.main-navigation').stop().slideToggle()
+    $('.site-header').toggleClass('nav-open')
+  })
+
 var nav = $('#site-navigation');
 if (nav.length) {
   var menu = nav.find('#primary-menu');

@@ -84,4 +84,18 @@
       position: static;
     }
   }
+
+  @media (max-width: 767px) {
+    padding: 75px 0;
+
+    .label { display: none; }
+
+    .section-head {
+      padding-bottom: 30px;
+
+      .section-title {
+        margin-bottom: 30px;
+      }
+    }
+  }
 }

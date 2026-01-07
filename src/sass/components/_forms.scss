@@ -135,13 +135,38 @@ label {
     }
   }
 
-  @media screen and (max-width:1200px) {
+  @media screen and (max-width: 1200px) {
     label:after,
-    label:before { top: -1px; }
+    label:before {
+      top: -1px;
+    }
   }
 }
 
 button[type="submit"] {
   font-size: inherit;
-  cursor: pointer; 
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .field {
+    height: 40px;
+    padding: 0 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  input[type="number"],
+  input[type="tel"] {
+    height: 40px;
+    padding: 0 20px;
+  }
+
+  textarea,
+  select {
+    padding: 20px;
+  }
 }

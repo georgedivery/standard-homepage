@@ -136,4 +136,17 @@
       }
     }
   }
+
+   @media screen and (max-width: 767px) {
+    margin: 0 -25px;
+    .slide-image {
+      margin-bottom: 60px;
+
+      &::before {
+        height: 100%;
+        top: 30px;
+        border-radius: 16px;
+      }
+    }
+  }
 }

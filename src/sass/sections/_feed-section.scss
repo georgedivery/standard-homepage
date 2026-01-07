@@ -95,8 +95,35 @@
   }
 
   @media (max-width: 1024px) {
-     .section-content { 
-       padding-right: 100px;
+    .section-content {
+      padding-right: 100px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .label {
+      display: none;
      }
+    .section-content {
+      padding-right: 0;
+      width: 100%;
+      order: 2;
+    }
+
+    .section-aside {
+      width: 100%;
+      padding: 0;
+      order: 1;
+      margin-bottom: 30px;
+
+      .section-aside-inner {
+        padding: 30px;
+        top: 0;
+      }
+    }
+
+    .section-bg-image {
+      width: 200px;
+    }
   }
 }

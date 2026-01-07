@@ -88,7 +88,7 @@
     font-size: $font-size-20;
 
     p {
-       &:first-child {
+      &:first-child {
         margin-bottom: 66px;
       }
       &:last-child {
@@ -104,25 +104,57 @@
     font-weight: 600;
   }
 
-  .btn { padding: 15px $spacing-40; font-size: $font-size-base; }
+  .btn {
+    padding: 15px $spacing-40;
+    font-size: $font-size-base;
+  }
 
-  @media screen and (max-width:$media1200) {
+  @media screen and (max-width: $media1200) {
     .form-content {
       width: 50%;
-      .label { 
+      .label {
         font-size: inherit;
-       }
+      }
       p {
         font-size: inherit;
       }
     }
 
-    .form-aside { width: 50%; }
+    .form-aside {
+      width: 50%;
+    }
 
     .form-foot {
       font-size: inherit;
     }
 
-      .btn { font-size: inherit; }
+    .btn {
+      font-size: inherit;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .form-content {
+      width: 100%;
+      padding: 0 25px;
+    }
+
+    .form-aside {
+      width: 100%;
+      padding: 0 25px;
+    }
+    .form-foot p:first-child {
+      margin-bottom: 30px;
+    }
+
+    .form-inner {
+      &::before {
+        width: 100%;
+      }
+
+      &::after {
+        width: 100%;
+      }
+    }
   }
 }
