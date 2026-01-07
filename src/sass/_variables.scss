@@ -52,9 +52,13 @@ $border-radius-20: 20px;
 $border-radius-30: 30px;
 $border-radius-50: 50px;
 
-// Breakpoints
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
+// Media queries
+$media480: 480px;
+$media576: 576px;
+$media768: 768px;
+$media1024: 1024px;
+$media1200: 1200px;
+$media1800: 1800px;
 
 // Transitions
 $transition-base: 0.3s ease;

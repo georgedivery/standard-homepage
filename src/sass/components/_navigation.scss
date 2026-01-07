@@ -105,7 +105,7 @@
   cursor: pointer;
   font-size: $font-size-base;
 
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: $media768) {
     display: block;
   }
 }

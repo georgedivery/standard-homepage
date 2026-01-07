@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 // Responsive styles
-@media (max-width: $breakpoint-md) {
+@media (max-width: $media768) {
   .site-header .container {
     flex-direction: column;
     gap: $spacing-md;
@@ -27,7 +27,7 @@
   }  
 }
 
-@media (max-width: $breakpoint-sm) {
+@media (max-width: $media576) {
   .container {
     padding: 0 $spacing-sm;
   }

@@ -135,7 +135,7 @@
     }
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: $media1200) {
     .section-title {
       font-size: 150px;
 
@@ -147,7 +147,7 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: $media1024) {
     min-height: auto;
     .section-title {
       font-size: 120px;
@@ -164,7 +164,7 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $media768) {
     min-height: auto;
 
     .mobile-content {
@@ -201,7 +201,7 @@
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: $media480) {
     min-height: auto;
 
     .section-overlay-ornament-top {

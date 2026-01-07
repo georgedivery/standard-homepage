@@ -70,14 +70,14 @@
     padding: $spacing-50 0;
   }
 
-  @media (max-width: 1800px) {
+  @media (max-width: $media1800) {
     .section-content {
       width: calc(31%);
       margin-right: 0px;
     }
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: $media1200) {
     .section-content {
       width: 40%;
     }
