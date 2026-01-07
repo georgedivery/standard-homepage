@@ -27,13 +27,13 @@ Custom WordPress theme built from scratch without Elementor or Gutenberg depende
 
 ```
 devrix/
-├── src/                    # Source files (edit these)
-│   ├── sass/              # SCSS stylesheets
-│   │   ├── _variables.scss    # Variables (colors, typography, spacing)
-│   │   ├── _reset.scss         # Reset and base styles
-│   │   ├── _responsive.scss   # Responsive breakpoints
-│   │   ├── master.scss         # Main stylesheet (imports all)
-│   │   └── components/          # Component styles
+├── src/ 
+│   ├── sass/ 
+│   │   ├── _variables.scss 
+│   │   ├── _reset.scss 
+│   │   ├── _responsive.scss   
+│   │   ├── master.scss 
+│   │   └── components/  
 │   │       ├── _header.scss
 │   │       ├── _navigation.scss
 │   │       ├── _footer.scss
@@ -45,21 +45,21 @@ devrix/
 │   │       ├── _comments.scss
 │   │       ├── _utilities.scss
 │   │       └── _container.scss
-│   ├── scripts/           # JavaScript files
-│   │   ├── scripts.js          # Main JavaScript file
-│   │   └── vendor/             # Third-party libraries
-│   ├── images/            # Source images (will be optimized)
-│   └── fonts/             # Font files
+│   ├── scripts/ 
+│   │   ├── scripts.js 
+│   │   └── vendor/ 
+│   ├── images/ 
+│   └── fonts/ 
 │
-├── dist/                   # Compiled files (auto-generated, don't edit)
-│   ├── css/               # Compiled CSS
-│   ├── scripts/           # Compiled JavaScript
-│   ├── images/            # Optimized images
-│   └── fonts/             # Copied fonts
+├── dist/ 
+│   ├── css/ 
+│   ├── scripts/ 
+│   ├── images/ 
+│   └── fonts/ 
 │
-├── gulpfile.js            # Gulp build configuration
-├── package.json           # NPM dependencies
-└── functions.php          # WordPress theme functions
+├── gulpfile.js 
+├── package.json 
+└── functions.php 
 ```
 
 ## 🚀 Getting Started
@@ -69,28 +69,10 @@ devrix/
 - Node.js (v14 or higher)
 - npm (comes with Node.js)
 - WordPress installation
+ 
+###   Commands
 
-### Installation
-
-1. **Install dependencies:**
-   ```bash
-   npm install --legacy-peer-deps
-   ```
-
-2. **Build assets:**
-   ```bash
-   npm run build
-   ```
-
-3. **Start development (watch mode):**
-   ```bash
-   npm run watch
-   ```
-
-## 📝 Available Commands
-
-### Build Commands
-
+- `npm install --legacy-peer-deps`  
 - `npm run build` - Compile all assets once (Sass, JavaScript, images, fonts)
 - `npm run watch` - Start watch mode (automatically recompiles on file changes)
 - `npm run lint:sass` - Lint SCSS files for code quality
@@ -169,28 +151,7 @@ devrix/
    ```scss
    @use 'components/my-component';
    ```
-
-### Using Variables
-
-All variables are available in components via `@use '../variables' as *;`
-
-**Available Variables:**
-- Colors: `$color-primary`, `$color-secondary`, `$color-text`, etc.
-- Typography: `$font-family-base`, `$font-size-base`, etc.
-- Spacing: `$spacing-xs`, `$spacing-sm`, `$spacing-md`, etc.
-- Breakpoints: `$breakpoint-sm`, `$breakpoint-md`, `$breakpoint-lg`, etc.
-
-### Responsive Design
-
-Use the breakpoint variables in media queries:
-```scss
-@media (max-width: $breakpoint-md) {
-  // Mobile styles
-}
-```
-
-## 📦 Working with JavaScript
-
+  
 ### Adding JavaScript
 
 1. **Edit `src/scripts/scripts.js`** for main functionality
@@ -245,23 +206,7 @@ The theme automatically enqueues:
 - **Production:** `master.min.css` and `bundle.min.js` (minified)
 
 Detection is based on `wp_get_environment_type()`.
-
-### Template Files
-
-Standard WordPress template hierarchy:
-- `index.php` - Main template
-- `single.php` - Single post
-- `page.php` - Pages
-- `archive.php` - Archives
-- `404.php` - 404 page
-- `search.php` - Search results
-- `header.php` - Header
-- `footer.php` - Footer
-- `sidebar.php` - Sidebar
-- `comments.php` - Comments
-
-## 🐛 Troubleshooting
-
+  
 ### Build Errors
 
 **Sass compilation errors:**
@@ -312,12 +257,4 @@ npm install --legacy-peer-deps
 3. Deploy theme to WordPress
 
 **Note:** The `dist/` folder should be included in version control for production deployments, or built on the server/CI.
-
-## 📄 License
-
-GPLv2 or later
-
-## 👥 Support
-
-For issues or questions, contact the development team.
-
+ 
