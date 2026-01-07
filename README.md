@@ -4,7 +4,7 @@
 
 Full project archive - the folder should be extracted into a project folder:
 
-**Archive link:** [https://drive.google.com/file/d/170AHP1YP9EPFZbNYbkthbl1gHviBKN4z/view?usp=sharing](https://drive.google.com/file/d/170AHP1YP9EPFZbNYbkthbl1gHviBKN4z/view?usp=sharing)
+**Archive link:** [https://drive.google.com/file/d/1NKuEolGcSal74u2_IrDfDd4cNDexyx0B/view?usp=sharing](https://drive.google.com/file/d/1NKuEolGcSal74u2_IrDfDd4cNDexyx0B/view?usp=sharing)
 
 **The database** is located in the `sync` folder.
 
