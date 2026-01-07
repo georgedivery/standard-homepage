@@ -7,13 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
     AOS.init({
       duration: 800,
       easing: 'ease-in-out',
-      once: true, // Анимацията се изпълнява само веднъж
-      offset: 0, // За hero секцията - задейства се веднага
+      once: true,
+      offset: 0,
       delay: 0,
-      startEvent: 'DOMContentLoaded' // Задейства се при зареждане на DOM
+      startEvent: 'DOMContentLoaded'
     });
-    
-    // Refresh AOS след зареждане за да задейства hero секцията веднага
+     
     setTimeout(function() {
       AOS.refresh();
     }, 100);
@@ -75,9 +74,6 @@ if (nav.length) {
     slidesToShow: 1,
     slidesToScroll: 1,
   });
-
-
-
-
+ 
 
 });
