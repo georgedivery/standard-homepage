@@ -17,6 +17,7 @@ const imageminOptipng = require('imagemin-optipng').default || require('imagemin
 const imageminSvgo = require('imagemin-svgo').default || require('imagemin-svgo');
 const plumber = require('gulp-plumber');
 const newer = require('gulp-newer');
+const gulpIf = require('gulp-if');
 const fs = require('fs');
 
 /**
@@ -81,7 +82,9 @@ gulp.task('minifyScripts', function () {
     ])
     .pipe(plumber())
     .pipe(sourcemaps.init())
-    .pipe(babel({
+    .pipe(gulpIf(function(file) {
+      return !file.path.includes('vendor');
+    }, babel({
       presets: [
         ['@babel/preset-env', {
           targets: {
@@ -89,7 +92,7 @@ gulp.task('minifyScripts', function () {
           }
         }]
       ]
-    }))
+    })))
     .pipe(concat('bundle.min.js'))
     .pipe(terser({
       compress: {

@@ -12,13 +12,13 @@ $title = $hero['section_hero_title'] ?: 'Default title';
     <div class="section-overlay-ornament-right"></div>
     <div class="shell">
         <div class="section-inner">
-            <h1 class="section-title" data-aos="fade-up">
-                <strong>
+            <h1 class="section-title" >
+                <strong data-aos="fade-up" data-aos-delay="0">
                     <span>
                         We
                     </span>
                 </strong>
-                <strong>
+                <strong data-aos="fade-up" data-aos-delay="200">
                     <i
                         style="background-image:url(<?php echo esc_url( get_template_directory_uri())?>/assets/images/SYMBOL.png)"></i>
                     <span>
@@ -29,7 +29,7 @@ $title = $hero['section_hero_title'] ?: 'Default title';
                         Supporting clients to sustainably eliminate 3Gt of CO2e on their transition to Net Zero
                     </small>
                 </strong>
-                <strong>
+                <strong data-aos="fade-up" data-aos-delay="400">
                     <strong>
                         <em>
                             Activators
@@ -38,7 +38,7 @@ $title = $hero['section_hero_title'] ?: 'Default title';
                 </strong>
             </h1>
 
-            <p class="mobile-content">
+            <p class="mobile-content" data-aos="fade-up" data-aos-delay="300">
              
                     <i
                         style="background-image:url(<?php echo esc_url( get_template_directory_uri())?>/assets/images/SYMBOL.png)"></i>
@@ -50,7 +50,7 @@ $title = $hero['section_hero_title'] ?: 'Default title';
                 
             </p>
 
-            <p class="text-right">
+            <p class="text-right" data-aos="fade-up" data-aos-delay="600">
                 <a href="#" class="btn"> Explore Net Zero</a>
             </p>
         </div>

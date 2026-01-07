@@ -8,9 +8,15 @@ document.addEventListener('DOMContentLoaded', function () {
       duration: 800,
       easing: 'ease-in-out',
       once: true, // Анимацията се изпълнява само веднъж
-      offset: 100,
-      delay: 0
+      offset: 0, // За hero секцията - задейства се веднага
+      delay: 0,
+      startEvent: 'DOMContentLoaded' // Задейства се при зареждане на DOM
     });
+    
+    // Refresh AOS след зареждане за да задейства hero секцията веднага
+    setTimeout(function() {
+      AOS.refresh();
+    }, 100);
   }
 });
 
