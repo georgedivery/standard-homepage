@@ -1,12 +1,19 @@
 <section class="section-news">
-    <div class="label">
+    <div class="label" 
+         data-aos="fade-up" 
+         data-aos-delay="0" 
+         id="news-trigger">
         News + Insights
     </div>
     <div class="shell">
         <div class="section-inner">
 
             <div class="section-content">
-                <div class="slider-news">
+                <div class="slider-news"  
+                     data-aos="fade-right" 
+                     data-aos-delay="200"
+                     data-aos-anchor="#news-trigger"
+                     data-aos-anchor-placement="top-bottom">
                     <div class="slide">
                         <div class="slide-inner">
                             <div class="slide-image"
@@ -66,11 +73,17 @@
             <div class="section-aside">
                 <div class="section-aside-inner">
 
-                    <h3>
+                    <h3  data-aos="fade-up" 
+                         data-aos-delay="100"
+                         data-aos-anchor="#news-trigger"
+                         data-aos-anchor-placement="top-bottom">
                         News <span>+</span> Insights
                     </h3>
 
-                    <p>
+                    <p  data-aos="fade-up" 
+                        data-aos-delay="300"
+                        data-aos-anchor="#news-trigger"
+                        data-aos-anchor-placement="top-bottom">
                         Stay up to date with all the latest news from Anthesis Group, including opinion pieces on the
                         latest
                         industry developments, advancements in sustainability consulting services, and how to measure
@@ -78,7 +91,10 @@
                         impact of sustainability.
                     </p>
 
-                    <p>
+                    <p  data-aos="fade-up" 
+                        data-aos-delay="400"
+                        data-aos-anchor="#news-trigger"
+                        data-aos-anchor-placement="top-bottom">
                         <a href="#" class="btn btn_orange">
                             View all
                         </a>

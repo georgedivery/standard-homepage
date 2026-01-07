@@ -1,21 +1,35 @@
 <section class="section-testimonials">
-    <div class="label">
+    <div class="label" 
+         data-aos="fade-up" 
+         data-aos-delay="0" 
+         id="testimonials-trigger">
         Testimonials
     </div>
     <div class="shell">
         <div class="section-head">
-            <h3 class="section-title">
+            <h3 class="section-title"  
+                data-aos="fade-up" 
+                data-aos-delay="100"
+                data-aos-anchor="#testimonials-trigger"
+                data-aos-anchor-placement="top-bottom">
                 Testimonials
             </h3>
 
-            <p>
+            <p  data-aos="fade-up" 
+                data-aos-delay="200"
+                data-aos-anchor="#testimonials-trigger"
+                data-aos-anchor-placement="top-bottom">
                 Global sustainability consultancy, driving performance across seven integrated service areas, creating
                 value and positive change for all clients.
             </p>
         </div>
 
         <div class="section-body">
-            <div class="testimonial-slider">
+            <div class="testimonial-slider"  
+                 data-aos="fade-up" 
+                 data-aos-delay="300"
+                 data-aos-anchor="#testimonials-trigger"
+                 data-aos-anchor-placement="top-bottom">
                 <div class="slide">
                     <div class="slide-inner">
 

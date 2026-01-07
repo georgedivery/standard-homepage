@@ -5,15 +5,25 @@
                 <form action="#">
                     <div class="form-inner">
                         <div class="form-content">
-                            <div class="label">
+                            <div class="label"  
+                                 data-aos="fade-up" 
+                                 data-aos-delay="0" 
+                                 id="contact-trigger">
                                 We'd love to hear from you
                             </div>
 
-                            <h3 class="form-title">
+                            <h3 class="form-title"  
+                                data-aos="fade-up" 
+                                data-aos-delay="100"
+                                data-aos-anchor="#contact-trigger"
+                                data-aos-anchor-placement="top-bottom">
                                 Contact <strong>Us</strong>
                             </h3>
 
-                            <p>
+                            <p  data-aos="fade-up" 
+                                data-aos-delay="200"
+                                data-aos-anchor="#contact-trigger"
+                                data-aos-anchor-placement="top-bottom">
                                 Anthesis has offices in the U.S., Canada, UK, France, the Netherlands, Belgium, South
                                 Africa,
                                 Ireland, Italy, Germany, Sweden, Spain, Portugal, Andorra, Finland, Colombia, Brazil,
@@ -23,7 +33,11 @@
                             </p>
                         </div>
 
-                        <div class="form-aside">
+                        <div class="form-aside"  
+                             data-aos="fade-left" 
+                             data-aos-delay="300"
+                             data-aos-anchor="#contact-trigger"
+                             data-aos-anchor-placement="top-bottom">
 
                             <div class="form-row">
                                 <input class="field" type="text" id="1" placeholder="Full Name">
@@ -48,7 +62,11 @@
                         </div>
                     </div>
 
-                    <div class="form-foot">
+                    <div class="form-foot"  
+                         data-aos="fade-up" 
+                         data-aos-delay="400"
+                         data-aos-anchor="#contact-trigger"
+                         data-aos-anchor-placement="top-bottom">
                         <p>
                             From time to time, we would like to contact you about our products and services, as well as
                             other
