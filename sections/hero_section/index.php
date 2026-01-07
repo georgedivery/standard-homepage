@@ -12,7 +12,7 @@ $title = $hero['section_hero_title'] ?: 'Default title';
     <div class="section-overlay-ornament-right"></div>
     <div class="shell">
         <div class="section-inner">
-            <h1 class="section-title">
+            <h1 class="section-title" data-aos="fade-up">
                 <strong>
                     <span>
                         We

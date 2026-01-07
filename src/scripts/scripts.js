@@ -1,6 +1,17 @@
 // Main scripts file
 document.addEventListener('DOMContentLoaded', function () {
   console.log('DOM loaded');
+  
+  // Initialize AOS
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true, // Анимацията се изпълнява само веднъж
+      offset: 100,
+      delay: 0
+    });
+  }
 });
 
 jQuery(function ($) {
