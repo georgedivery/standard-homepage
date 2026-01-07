@@ -83,4 +83,17 @@
       pointer-events: none;
     }
   }
+
+  @media screen and (max-width: $media1200) {
+    .section-aside {
+      padding-left: 100px;
+      font-size: inherit;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .label {
+      position: static;
+    }
+  }
 }

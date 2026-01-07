@@ -50,8 +50,8 @@
   }
   .section-aside {
     padding-left: 42px;
-     width: 36%;
-     padding-right: $spacing-50;
+    width: 36%;
+    padding-right: $spacing-50;
     .section-aside-inner {
       top: -$spacing-30;
       padding: $spacing-50 0;
@@ -82,7 +82,21 @@
         pointer-events: none;
       }
 
-      .section-title { margin-bottom: $spacing-30; }
+      .section-title {
+        margin-bottom: $spacing-30;
+      }
     }
+  }
+
+  @media (max-width: 1400px) {
+    .label {
+      position: static;
+    }
+  }
+
+  @media (max-width: 1024px) {
+     .section-content { 
+       padding-right: 100px;
+     }
   }
 }

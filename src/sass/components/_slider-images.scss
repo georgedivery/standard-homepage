@@ -1,7 +1,7 @@
 @use "../variables" as *;
 
 .slider-images {
-  margin: 0 -$spacing-10;
+  margin: 0 -10px;
   text-align: center;
   .slide-inner {
     text-align: center;
@@ -20,6 +20,7 @@
     font-weight: 700;
     margin-bottom: 56px;
   }
+  
 
   .slick-dots {
     display: flex;

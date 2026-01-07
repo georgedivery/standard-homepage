@@ -105,4 +105,24 @@
   }
 
   .btn { padding: 15px $spacing-40; font-size: $font-size-base; }
+
+  @media screen and (max-width:$media1200) {
+    .form-content {
+      width: 50%;
+      .label { 
+        font-size: inherit;
+       }
+      p {
+        font-size: inherit;
+      }
+    }
+
+    .form-aside { width: 50%; }
+
+    .form-foot {
+      font-size: inherit;
+    }
+
+      .btn { font-size: inherit; }
+  }
 }

@@ -75,8 +75,13 @@
   .section-foot {
     text-align: center;
   }
-  
+
   .section-head {
     padding-bottom: $spacing-50;
+  }
+  @media (max-width: 1400px) {
+    .label {
+      position: static;
+    }
   }
 }

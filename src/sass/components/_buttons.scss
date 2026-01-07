@@ -21,6 +21,15 @@
     outline: 2px solid $color-primary;
     outline-offset: 2px;
   }
+
+  @media screen and (max-width:$media1800) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width:$media1200) {
+    font-size: 18px;
+    padding: 15px $spacing-20;
+  }
 }
 
 .btn_dark {
@@ -34,6 +43,7 @@
   &:hover {
     background: $color-dark-blue;
     color: $color-white;
+    
   }
 }
 

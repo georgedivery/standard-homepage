@@ -120,4 +120,8 @@
     top: 0;
     right: $spacing-20;
   }
+
+  @media screen and (max-width:$media1200) {
+    font-size: inherit;
+  }
 }

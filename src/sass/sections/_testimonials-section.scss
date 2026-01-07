@@ -6,7 +6,9 @@
   padding: $spacing-100 0 80px;
   position: relative;
 
-  .shell { padding: 0 35px; }
+  .shell {
+    padding: 0 35px;
+  }
 
   .section-head {
     text-align: center;
@@ -20,7 +22,9 @@
     }
   }
 
-  .section-title { margin-bottom: $spacing-40; }
+  .section-title {
+    margin-bottom: $spacing-40;
+  }
 
   .label {
     padding-left: $spacing-10;
@@ -40,6 +44,20 @@
       background: $color-white;
       display: block;
       margin-right: $spacing-10;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .label {
+      position: static;
+    }
+  }
+
+  @media (max-width: $media1200) {
+    .section-head {
+      margin: 0 auto;
+      font-size: inherit;
+      max-width: 700px;
     }
   }
 }

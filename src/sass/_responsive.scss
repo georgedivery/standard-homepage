@@ -1,12 +1,15 @@
 @use 'variables' as *;
 
 // Responsive styles
-@media (max-width: $media768) {
+@media (max-width: 1024px) {
   .site-header .container {
     flex-direction: column;
     gap: $spacing-md;
   }
 
+    .main-navigation {
+      display: none;
+    }
   .main-navigation ul {
     flex-direction: column;
     gap: $spacing-xs;

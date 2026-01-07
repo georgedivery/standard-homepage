@@ -72,18 +72,27 @@
 
   @media (max-width: $media1800) {
     .section-content {
-      width: calc(31%);
-      margin-right: 0px;
+      width: 50%;
+    }
+
+    .section-aside {
+      width: 50%;
+    }
+
+    .slider-images-outer {
+      left: 0;
+      width: 80%;
+    }
+  }
+  @media (max-width: 1400px) {
+    .label {
+      position: static;
     }
   }
 
   @media (max-width: $media1200) {
     .section-content {
-      width: 40%;
-    }
-
-    .section-aside {
-      width: 60%;
+      font-size: inherit;
     }
   }
 }

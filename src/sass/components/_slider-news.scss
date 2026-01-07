@@ -120,4 +120,20 @@
     top: 0;
     right: 55px;
   }
+
+  @media screen and (max-width: $media1200) {
+    .slide {
+      h4 {
+        font-size: inherit;
+      }
+
+      p {
+        font-size: inherit;
+        strong {
+          font-weight: 600;
+          font-size: inherit;
+        }
+      }
+    }
+  }
 }
